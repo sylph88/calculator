@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
-    <script src="/app.js"></script>
+    <script src="/app.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -13,27 +16,29 @@
         <h1>Beep boop</h1>
     </header>
     <main>
-        <div class="display">SCREEN_PLACEHOLDER</div>
-        <div class="calculator-container">
-            <button class="calculator-button">CLEAR</button>
-            <button class="calculator-button">DEL</button>
-            <button class="calculator-button">SQRT</button>
-            <button class="calculator-button">÷</button>
-            <button class="calculator-button">7</button>
-            <button class="calculator-button">8</button>
-            <button class="calculator-button">9</button>
-            <button class="calculator-button">x</button>
-            <button class="calculator-button">4</button>
-            <button class="calculator-button">5</button>
-            <button class="calculator-button">6</button>
-            <button class="calculator-button">-</button>
-            <button class="calculator-button">1</button>
-            <button class="calculator-button">2</button>
-            <button class="calculator-button">3</button>
-            <button class="calculator-button">+</button>
-            <button id="zero" class="calculator-button">0</button>
-            <button class="calculator-button">.</button>
-            <button class="calculator-button">=</button>
+        <div class="wrapper">
+            <div class="display"></div>
+            <div class="calculator-container">
+                <button class="calculator-button" data-value="clear">CLEAR</button>
+                <button class="calculator-button" data-value="delete">DEL</button>
+                <button class="calculator-button" data-value="sqrt" data-operator=true>SQRT</button>
+                <button class="calculator-button" data-value="divide" data-operator=true>/</button>
+                <button class="calculator-button" data-value="7">7</button>
+                <button class="calculator-button" data-value="8">8</button>
+                <button class="calculator-button" data-value="9">9</button>
+                <button class="calculator-button" data-value="multiply" data-operator=true>x</button>
+                <button class="calculator-button" data-value="4">4</button>
+                <button class="calculator-button" data-value="5">5</button>
+                <button class="calculator-button" data-value="6">6</button>
+                <button class="calculator-button" data-value="subtract" data-operator=true>-</button>
+                <button class="calculator-button" data-value="1">1</button>
+                <button class="calculator-button" data-value="2">2</button>
+                <button class="calculator-button" data-value="3">3</button>
+                <button class="calculator-button" data-value="add" data-operator=true>+</button>
+                <button id="zero" class="calculator-button" data-value="0">0</button>
+                <button class="calculator-button" data-value="decimal">.</button>
+                <button class="calculator-button" data-value="equals">=</button>
+            </div>
         </div>
     </main>
 </body>
