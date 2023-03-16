@@ -29,6 +29,10 @@ function divide(x, y) {
     return x / y;
 }
 
+function sqrt(x, y) {
+    return Math.sqrt(x, y);
+}
+
 function operate(operator, x, y) {
     x = parseFloat(x);
     y = parseFloat(y);
@@ -37,6 +41,7 @@ function operate(operator, x, y) {
         case "multiply": return multiply(x, y);
         case "subtract": return subtract(x, y);
         case "add": return add(x, y);
+        case "sqrt": return sqrt(x, y);
     }
 }
 
